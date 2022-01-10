@@ -27,8 +27,8 @@ sXY_CIO_COEFS_TABLES = [np.genfromtxt('./testing_code/tab5.2c.txt', dtype=float,
                         np.genfromtxt('./testing_code/tab5.2c.txt', dtype=float, skip_header=110, skip_footer=2),
                         np.genfromtxt('./testing_code/tab5.2c.txt', dtype=float, skip_header=117)]
 
-TIP_AND_DUT1_TABLE = np.genfromtxt('./testing_code/6_BULLETIN_A_V2013_016.txt', dtype=float, skip_header=122, skip_footer=42)[:, 3:]
-
+# TIP_AND_DUT1_TABLE = np.genfromtxt('./testing_code/6_BULLETIN_A_V2013_016.txt', dtype=float, skip_header=122, skip_footer=42)[:, 3:]
+TIP_AND_DUT1_TABLE = np.genfromtxt('./testing_code/6_BULLETIN_A.txt', dtype=float, skip_header=141, skip_footer=112)[:, 3:]
 
 def assoc_legendre(theta, n, m):
     sum = 0
@@ -649,7 +649,7 @@ def TIP_coords(JD, table=TIP_AND_DUT1_TABLE):
 
     MJD = int(mjd(JD))
 
-    if MJD > 59299 or MJD < 58935:
+    if MJD > 59950 or MJD < 59586:
         raise Exception('Non-sustainable date, import another file')
 
     num = np.argwhere(table[:, 0] == MJD)[0, 0]

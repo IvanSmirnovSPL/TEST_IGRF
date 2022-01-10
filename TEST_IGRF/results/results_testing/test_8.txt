@@ -1,0 +1,11 @@
+Magnetic fields components in South-East-Up geographical frame:
+28086.988419278303 3620.389777223933 -33659.79966978855 nT 
+Intensity of the field: 43988.27405586628 nT 
+
+Magnetic fields components in ECEF: 
+35684.033804381055 -25525.263265544316 3174.73165581634 nT 
+Intensity of the field: 43988.27405586628 nT 
+
+Magnetic fields components in ECI: 
+-41318.238858658675 14735.07603989292 3262.703122554441 nT 
+Intensity of the field: 43988.23206209275 nT 

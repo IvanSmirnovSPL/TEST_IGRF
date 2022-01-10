@@ -1,0 +1,15 @@
+Geomagnetic field values at: -34.61° / -58.38°, at altitude 6373.5, for 2022.37
+Declination (D):-9.56°
+Inclination (I):-40.90°
+Horizontal intensity (H): 17144.4nT
+Total intensity (F)     : 22682.9nT
+North component (X)     : 16906.4nT
+East component (Y)      : -2847.1nT
+Vertical component (Z)  :-14852.0nT
+Declination SV (D) : 9.37arcmin/yr
+Inclination SV (I) : 12.54arcmin/yr
+Horizontal SV (H)  :  -79.8nT/yr
+Total SV (F)       :  -34.1nT/yr
+North SV (X)       :  -86.3nT/yr
+East SV (Y)        :  -33.9nT/yr
+Vertical SV (Z)    :  -41.1nT/yr

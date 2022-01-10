@@ -1,15 +1,15 @@
-Geomagnetic field values at: 59.9386° / 30.31413°, at altitude 0.011, for 2020.21
-Declination (D): 11.23°
-Inclination (I): 73.69°
-Horizontal intensity (H): 14804.7nT
-Total intensity (F)     : 52731.2nT
-North component (X)     : 14521.1nT
-East component (Y)      :  2884.0nT
-Vertical component (Z)  : 50610.3nT
-Declination SV (D) :-10.53arcmin/yr
-Inclination SV (I) :-2.20arcmin/yr
-Horizontal SV (H)  :  -13.3nT/yr
-Total SV (F)       :   67.9nT/yr
-North SV (X)       :  -21.8nT/yr
-East SV (Y)        :   41.9nT/yr
-Vertical SV (Z)    :   74.6nT/yr
+Geomagnetic field values at: 59.9386° / 30.31413°, at altitude 6371.011, for 2022.027
+Declination (D): 11.69°
+Inclination (I): 74.01°
+Horizontal intensity (H): 14510.8nT
+Total intensity (F)     : 52679.3nT
+North component (X)     : 14209.6nT
+East component (Y)      :  2941.0nT
+Vertical component (Z)  : 50641.3nT
+Declination SV (D) :-10.70arcmin/yr
+Inclination SV (I) :-2.19arcmin/yr
+Horizontal SV (H)  :  -13.5nT/yr
+Total SV (F)       :   67.4nT/yr
+North SV (X)       :  -22.1nT/yr
+East SV (Y)        :   41.7nT/yr
+Vertical SV (Z)    :   74.0nT/yr

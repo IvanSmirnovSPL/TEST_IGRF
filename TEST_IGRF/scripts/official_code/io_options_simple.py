@@ -40,7 +40,7 @@ def option1(LTD, LND, alt, date):
 
     #    if iopt == 1:  # Start with a simple example, values at one location and time
 
-    itype  = 1
+    itype  = 2
 
     '''
     while 1:
@@ -83,7 +83,7 @@ def option1(LTD, LND, alt, date):
             alt = iut.check_float(alt)
             alt, colat, sd, cd = iut.gg_to_geo(alt, colat)
         else:
-            alt = input('Enter radial distance in km (>3485 km): ').rstrip()
+            #alt = input('Enter radial distance in km (>3485 km): ').rstrip()
             alt = iut.check_float(alt)
             sd = 0;
             cd = 0
@@ -264,10 +264,10 @@ def write3(name, date, alt, lat, colat, lon, X, Y, Z, dX, dY, dZ, \
             file.writelines(['Geomagnetic field values for: ', str(np.round(lon[i], decimals=4))
                              + ', at altitude '
                              + str(np.round(alt[0], decimals=3)) + '\n'])
-            file.writelines(['Latitude Longitude  D(' + degree_sign + ')  I(' + degree_sign + ')  H(nT)'
-                                                                                              ' F(nT) X(nT) Y(nT)  Z(nT)     '
-                                                                                              'SV_D(min/yr)  SV_I(min/yr)  SV_H(nT/yr) '
-                                                                                              ' SV_F(nT/yr)  SV_X(nT/yr)  SV_Y(nT)  SV_Z(nT/yr) \n'])
+            file.writelines(['Latitude Longitude  D(' + degree_sign + ')  I(' + degree_sign + ')  H( nT)'
+                                                                                              ' F( nT) X( nT) Y( nT)  Z( nT)     '
+                                                                                              'SV_D(min/yr)  SV_I(min/yr)  SV_H( nT/yr) '
+                                                                                              ' SV_F( nT/yr)  SV_X( nT/yr)  SV_Y( nT)  SV_Z( nT/yr) \n'])
             # Write out in a loop
             for i in range(len(date)):
                 file.writelines([str(np.round(lat[i], decimals=4)), str(lon[i]),
