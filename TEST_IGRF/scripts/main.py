@@ -6,9 +6,14 @@ import numpy as np
 def compare(a, b, name):
     # b - official
     delta = abs(a - b)
-    rel_err = delta / b
-    print(name + ':', 'delta:', "{:10.4e}".format(delta),
-          'relative error:', "{:10.4e}".format(rel_err))
+    rel_err = delta / abs(b)
+    if rel_err > 1e-2:
+        print(a, b)
+        print(name + ':', 'delta:', "{:10.4e}".format(delta),
+            'relative error:', "{:10.4e}".format(rel_err))
+    else:
+        print('SUCCESS')
+
 
 
 def switch(j, A, B):
@@ -107,10 +112,10 @@ for i in range(num_of_tests):
         lines = f.readlines()
         tmp = [lines[4], lines[5],
                lines[6], lines[7]]
-        official_res.Total = float(tmp[0][-10 :-3] )
-        official_res.X = float(tmp[1][-10 :-3])
-        official_res.Y = - float(tmp[2][-10 :-3])
-        official_res.Z = - float(tmp[3][-10 :-3])
+        official_res.Total = float(tmp[0][-11 :-3] )
+        official_res.X = float(tmp[1][-11 :-3])
+        official_res.Y = - float(tmp[2][-11 :-3])
+        official_res.Z = - float(tmp[3][-11 :-3])
 
     print('Test ' + str(i + 1))
     check_results(test_res, official_res)
